@@ -52,9 +52,9 @@ def start_training(char_name, char_class):
         cmd = input('Введи команду: ')
         if cmd == 'attack':
             print(attack(char_name, char_class))
-        if cmd == 'defence':
+        elif cmd == 'defence':
             print(defence(char_name, char_class))
-        if char_class == 'healer':
+        else:
             print(special(char_name, char_class))
     return 'Тренировка окончена.'
 
